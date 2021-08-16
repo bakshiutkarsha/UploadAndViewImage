@@ -48,6 +48,6 @@
     "prettier": "^2.2.1",
     "prisma": "^2.23.0",
     "webpack": "^4.46.0",
-    "@types/node": "^15.14.2",
+    "@types/node": "^15.14.2"
   }
 }
