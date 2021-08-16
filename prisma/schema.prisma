@@ -19,5 +19,8 @@ model Post {
   content   String?
   id        Int     @default(autoincrement()) @id
   title     String
+  createdAt DateTime @default(now())
+  translate String
+  fileName  String
   author    User?   @relation(fields: [authorId], references: [id])
 }

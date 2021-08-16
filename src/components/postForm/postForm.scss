@@ -1,0 +1,86 @@
+.journal-content-input{
+    &__buttons{
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+        &-loading{
+            width: 20px;
+            margin-left: 10px;
+        }
+    }
+    &__error{
+        padding-left: 20px;
+        font-size: 12px;
+        color: red;
+    }
+    &__file {
+        &::file-selector-button {
+            border: 0;
+            background: #0a6dcf;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            outline: none;
+            border: 1px solid transparent;
+            font-family: 'Montserrat', sans-serif;
+            margin-right: 10px;
+        }
+    }
+    &__loading{
+        padding: 0px 20px 20px;
+        background: #edf0ff;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 12px;
+        &:after {
+            content: ' .';
+            font-size: 30px;
+            animation: dots 1s steps(5, end) infinite;}
+    }
+}
+
+
+// DOT ANIMATION
+
+@keyframes dots {
+    0%, 20% {
+      color: rgba(0,0,0,0);
+      text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);}
+    40% {
+      color: white;
+      text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);}
+    60% {
+      text-shadow:
+        .25em 0 0 white,
+        .5em 0 0 rgba(0,0,0,0);}
+    80%, 100% {
+      text-shadow:
+        .25em 0 0 white,
+        .5em 0 0 white;}}
+
+// <------ MEDIA QUERIES ------->
+
+// FOR MOBILE
+
+@media only screen and (max-width: 600px) {
+    .journal-content-input{
+        &__buttons{
+            margin-top: 20px;
+        }
+        &__error{
+            padding-left: 20px;
+            font-size: 12px;
+            color: red;
+        }
+        &__file {
+            &::file-selector-button {
+                padding: 7px 10px;
+            }
+        }
+    }
+}

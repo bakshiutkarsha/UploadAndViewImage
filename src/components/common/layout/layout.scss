@@ -1,0 +1,19 @@
+.layout {
+    min-height: 70em;
+    padding: 2% 5%;
+    background: rgb(236,198,149);
+    background: linear-gradient(
+90deg
+, rgba(236,198,149,1) 0%, rgba(227,176,184,1) 54%, rgba(218,156,216,1) 100%);
+  box-sizing: border-box;
+}
+
+// <------ MEDIA QUERIES ------->
+
+// FOR MOBILE
+
+@media only screen and (max-width: 600px) {
+    .layout{
+        padding: 20px 0 20px 0;
+    }
+}

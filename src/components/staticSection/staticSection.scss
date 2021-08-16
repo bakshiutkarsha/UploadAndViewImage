@@ -1,0 +1,52 @@
+section {
+    background: #f3d083;
+    padding: 20px;
+    color: #886312;
+    font-family: 'Montserrat', sans-serif;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    .journal-section {
+        &__head{
+            font-family: 'Style Script', cursive;
+            font-size: 40px;
+            color: #b38e3f;
+        }
+        &__sub-text{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        &__cntr{
+            display: inline-flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+        }
+        &__img{
+            height: 100px;
+            img{
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+// <------ MEDIA QUERIES ------->
+
+// FOR MOBILE
+
+@media only screen and (max-width: 600px) {
+    section {
+        .journal-section {
+            &__head{
+                font-size: 20px;
+            }
+            &__sub-text{
+                font-size: 18px;
+            }
+            &__img{
+                height: 60px;
+            }
+        }
+    }
+}

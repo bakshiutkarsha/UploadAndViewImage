@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Open+Sans&family=Style+Script&display=swap'); 
+
+body, html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif,
+     'Segoe UI Emoji', 'Segoe UI Symbol';
+     margin: 0;
+     height: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+#__next {
+    // height: 100%;
+}
+
+.button {
+    background: #ea4c89;
+    color: #fff;
+    padding: 15px 50px;
+    border: 0.3px solid #f2b8d0;
+    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    margin-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    &.secondary {
+        background: #f3d083;
+        border: 0.3px solid #f3d08354;
+    }
+}
+
+.journal-add{
+    &__cntr{
+        height: 100%;
+        background-color: #fff;
+        border-radius: 4px;
+        width: 35%;
+        height: auto;
+        margin: 20px auto;
+        box-shadow: 0px 9px 15px -8px #3b3b3b;
+    }
+}
+
+// <------ MEDIA QUERIES ------->
+
+// FOR MOBILE
+
+@media screen and (max-width: 1200px) {
+    .button{
+        padding: 10px 25px;
+    }
+    .journal-add{
+        &__cntr{
+            width: 90%;
+        }
+    }
+}
