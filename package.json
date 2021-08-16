@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "lint": "eslint --fix --ext .js,.jsx .",
-    "format": "prettier --write './**/*.{js,jsx,md,json}'"
+    "format": "prettier --write './**/*.{js,jsx,md,json}'",
+    "postinstall": "prisma generate"
   },
   "keywords": [],
   "author": "",

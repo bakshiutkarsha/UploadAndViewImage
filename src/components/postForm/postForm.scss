@@ -41,6 +41,21 @@
 }
 
 
+// For older version of chrome
+input[type="file"]::-webkit-file-upload-button {
+    border: 0;
+    background: #0a6dcf;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 10px;
+}
+
+
 // DOT ANIMATION
 
 @keyframes dots {
