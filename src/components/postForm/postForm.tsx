@@ -67,10 +67,10 @@ export const PostForm = () => {
                 name={field}
                 placeholder={`Enter your ${field}`}
                 label={field}
-                 // @ts-ignore: Unreachable code error
                 { ...field === 'email'? {...register(field, {
                     pattern: /\S+@\S+\.\S+/,
                     required: true,
+                  // @ts-ignore: Unreachable code error
                   })} : {...register(field, {
                     required: true,
                     validate: validateString(field)
