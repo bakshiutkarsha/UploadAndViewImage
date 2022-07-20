@@ -42,11 +42,9 @@ yarn dev
 
 The app is now running, navigate to [`http://localhost:3000/`](http://localhost:3000/) in your browser to explore its UI.
 
-### Location of deployed application (not necessary for Junior Engineers)
+### Location of deployed application
 
 https://thinkify-journal-app.herokuapp.com
-
-*In Heroku, **thinkific** name was taken so I had to use **thinkify** in the url
 
 ### Instructions to run locally
 
